@@ -1,0 +1,16 @@
+[package]
+name = "legion_go_reset"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+# Direct kernel input interface (efficient, zero-copy)
+evdev = "0.12"
+# Required for low-level system interaction
+libc = "0.2"
+
+[profile.release]
+strip = true      # Remove debug symbols to minimize file size
+opt-level = "z"   # Optimize for size (creates a tiny binary)
+lto = true        # Link Time Optimization
+codegen-units = 1
