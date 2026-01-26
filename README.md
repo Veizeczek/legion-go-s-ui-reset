@@ -80,6 +80,12 @@ sudo ./install.sh uninstall
 
 *Note: The order of pressing buttons does not matter, as long as both are held down simultaneously for the required duration.*
 
+## ✅ Compatibility
+Tested and confirmed working on:
+- **Device:** Lenovo Legion Go S
+- **OS:** SteamOS 3.x (Stable)
+- **Kernel:** 6.x
+
 ---
 
 ## Python Version (Legacy)
