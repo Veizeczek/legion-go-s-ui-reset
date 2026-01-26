@@ -92,9 +92,4 @@ Tested and confirmed working on:
 
 If you prefer the Python implementation or cannot compile Rust, navigate to the `/python_version` directory.
 
-```bash
-cd python_version
-# Ensure you have 'evdev' installed via pip or pacman
-sudo python3 steam-vol-reset.py
-```
 (Note: The Python version is kept for archival purposes and is no longer actively developed.)
