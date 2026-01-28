@@ -33,14 +33,14 @@ This repository contains two implementations of the service:
 You don't need to clone the repository manually. Just open the terminal (Konsole) and paste this single command:
 
 ```bash
-mkdir -p /tmp/legion_install && cd /tmp/legion_install && wget -O legion_go_reset https://github.com/Veizeczek/LegionGoS-UI-Reset/releases/download/v1.0/legion_go_reset && wget -O install.sh https://raw.githubusercontent.com/Veizeczek/LegionGoS-UI-Reset/main/rust_version/install.sh && chmod +x install.sh && sudo ./install.sh && cd ~ && rm -rf /tmp/legion_install
+mkdir -p /tmp/legion_install && cd /tmp/legion_install && wget -O legion_go_reset https://github.com/Veizeczek/legion-go-s-ui-reset/releases/download/v1.0/legion_go_reset && wget -O install.sh https://raw.githubusercontent.com/Veizeczek/legion-go-s-ui-reset/main/rust_version/install.sh && chmod +x install.sh && sudo ./install.sh && cd ~ && rm -rf /tmp/legion_install
 ```
 (This command downloads the binary release and the installer script to a temporary folder, installs the service, and cleans up afterwards.)
 
 ## Uninstall
 To completely remove the service and configuration:
 ```bash
-curl -sL https://raw.githubusercontent.com/Veizeczek/LegionGoS-UI-Reset/main/rust_version/install.sh | sudo bash -s uninstall
+curl -sL https://raw.githubusercontent.com/Veizeczek/legion-go-s-ui-reset/main/rust_version/install.sh | sudo bash -s uninstall
 ```
 
 ## 🛠️ Manual
@@ -49,8 +49,8 @@ curl -sL https://raw.githubusercontent.com/Veizeczek/LegionGoS-UI-Reset/main/rus
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Veizeczek/LegionGoS-UI-Reset.git](https://github.com/Veizeczek/LegionGoS-UI-Reset.git)
-    cd LegionGoS-UI-Reset/rust_version
+    git clone [https://github.com/Veizeczek/legion-go-s-ui-reset.git](https://github.com/Veizeczek/legion-go-s-ui-reset.git)
+    cd legion-go-s-ui-reset/rust_version
     ```
 
 2.  **Build the binary:**
