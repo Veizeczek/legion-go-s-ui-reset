@@ -32,45 +32,45 @@ This repository contains two implementations of the service:
 
 You don't need to clone the repository manually. Just open the terminal (Konsole) and paste this single command:
 
-```bash
+~~~bash
 mkdir -p /tmp/legion_install && cd /tmp/legion_install && wget -O legion_go_reset https://github.com/Veizeczek/legion-go-s-ui-reset/releases/download/v1.0/legion_go_reset && wget -O install.sh https://raw.githubusercontent.com/Veizeczek/legion-go-s-ui-reset/main/rust_version/install.sh && chmod +x install.sh && sudo ./install.sh && cd ~ && rm -rf /tmp/legion_install
-```
+~~~
 (This command downloads the binary release and the installer script to a temporary folder, installs the service, and cleans up afterwards.)
 
 ## Uninstall
 To completely remove the service and configuration:
-```bash
+~~~bash
 curl -sL https://raw.githubusercontent.com/Veizeczek/legion-go-s-ui-reset/main/rust_version/install.sh | sudo bash -s uninstall
-```
+~~~
 
 ## 🛠️ Manual
 
 **Prerequisites:** You need `cargo` (Rust compiler) installed to build the binary.
 
 1.  **Clone the repository:**
-    ```bash
+    ~~~bash
     git clone [https://github.com/Veizeczek/legion-go-s-ui-reset.git](https://github.com/Veizeczek/legion-go-s-ui-reset.git)
     cd legion-go-s-ui-reset/rust_version
-    ```
+    ~~~
 
 2.  **Build the binary:**
-    ```bash
+    ~~~bash
     cargo build --release --target x86_64-unknown-linux-musl
-    ```
+    ~~~
     *(Note: If building directly on SteamOS, standard `cargo build --release` is usually sufficient).*
 
 3.  **Install the service:**
-    ```bash
+    ~~~bash
     chmod +x install.sh
     sudo ./install.sh
-    ```
+    ~~~
 
 ### Uninstallation
 To remove the service and clean up all files:
-```bash
+~~~bash
 cd rust_version
 sudo ./install.sh uninstall
-```
+~~~
 ## Usage
 
 1.  Press and hold **Volume Up (+)**.
